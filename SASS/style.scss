@@ -1,0 +1,40 @@
+/* style.scss */
+
+$primary-color:  #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color:  #99E2D0;
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family:'Roboto';
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+@media (min-width: 1024px) {
+    .main-container {
+      width: 1200px;       
+      margin: 0 auto;
+      padding: 30px;     
+    }
+}
