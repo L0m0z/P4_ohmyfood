@@ -1,0 +1,73 @@
+.form-container {
+    width: 100%;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    background-color: #f1f1f1;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container i {
+    color: #0f0f0f;
+}
+
+form input[type="text"] {
+    height: 50px;
+    border: 0;
+    font-size: 20px;
+    text-align: center;
+    color: #353535;
+    background-color: #f1f1f1;
+}
+
+form input::placeholder {
+    font-weight: bold;  
+    color: black;    
+}
+
+/****** EXPLORE ***********/
+
+
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f1f1f1; 
+    padding-bottom: 45px; 
+}
+
+.explore h1 {
+    font-size: 39px;       
+    margin-bottom: 20px;    
+    margin-top: 20px; 
+}
+
+.explore p {
+    font-size: 23px;       
+    margin-bottom: 30px;      
+    color: #353535;   
+    font-weight: 300;
+}
+
+.btn-explore button {
+    padding: 22px 50px;   
+    font-size: 22px;        
+    background: linear-gradient(180deg, #9356DC, #FF79DA); 
+    color: white;           
+    border: none;
+    border-radius: 30px;  
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);   
+}
+
+.btn-explore button:hover {
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3); 
+    
+}

@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family:'Roboto';
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+button:hover {
+    
+    box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.25);
+
+}
