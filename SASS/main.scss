@@ -1,23 +1,20 @@
-@import './base/reset.scss'
-@import './base/base.scss'
+@use "base/reset";
+@use "base/base";
 
-@import './utils/variables.scss'
+@use "utils/variables";
+@use "utils/media";
 
-@import './layout/header.scss'
-@import './layout/footer.scss'
+@use "layout/header";
+@use "layout/footer";
 
-@import './components/form-explore.scss'
+@use "components/form-explore";
 
-@import './pages/index.scss'
-
-
-
+@use "pages/index";
 
 
-/****** Media queries ***********
-@media (min-width: 1024px) {
-    .main-container {
-     
-    }
-}
-/
+
+
+
+
+
+  
