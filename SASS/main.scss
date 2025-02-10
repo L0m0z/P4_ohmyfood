@@ -2,15 +2,15 @@
 @use "base/base";
 
 @use "utils/variables";
-@use "utils/media";
 
 @use "layout/header";
 @use "layout/footer";
 
 @use "components/form-explore";
+@use "components/loader";
 
 @use "pages/index";
-
+@use "pages/restaurants";
 
 
 

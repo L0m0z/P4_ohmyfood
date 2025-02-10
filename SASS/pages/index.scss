@@ -1,21 +1,26 @@
-
-
-
-
-
 /****** FONCTIONNEMENT ***********/
 
 
 .fonctionnement {
-    padding: 19px;
+    padding: 50px 19px;
 }
+
+@media screen and (min-width: 1024px) {
+    .fonctionnement {
+        padding: 50px 10%;
+    }
+}
+
 .fonctionnement h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
-    padding-left: 19px;
+
 }
 
-
+.fonctionnement-btns  { 
+    padding-left: 10px;
+   
+}
 
 .fonctionnement-btns ol {
     list-style: none; 
@@ -25,6 +30,13 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .fonctionnement .fonctionnement-btns ol {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 
@@ -50,11 +62,12 @@
     align-items: center;
     justify-content: center;
     position: absolute;
+    left: -12px;
 
 }
 
 .fonctionnement-btn {
-    padding: 15px 50px;
+    padding: 30px 50px;
     width: 100%;
     font-size: 18px;
     background-color: #f1f1f1;
@@ -69,6 +82,16 @@
 
 .fonctionnement-btn i {
     font-size: 22px;
+    color: #7E7E7E;
+}
+
+.fonctionnement-btns  li::before button:hover {
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3); 
+    filter: brightness(1.5);
+    
+}
+
+.fonctionnement-btn:hover i {
     color: #9356DC;
 }
 
@@ -76,13 +99,17 @@
 
 .restaurant {
     background-color: #f1f1f1; 
-    margin-bottom: 20px;
-    padding: 19px;
+    padding: 50px 19px;
 }
 
+@media screen and (min-width: 1024px) {
+    .restaurant {
+        padding: 50px 10%;
+    }
+}
 .restaurant h2 {
-    font-size: 32px;       
-    padding: 30px 19px
+    font-size: 28px; 
+    margin-bottom: 40px;      
 }
 .restaurant-cards {
     display: flex;            
@@ -91,6 +118,21 @@
     padding: 30 10px; 
 }
 
+@media screen and (min-width: 1024px) {
+    .restaurant .restaurant-cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .restaurant-cards a {
+        width: 46%;
+    }
+}
 
 .card {
     background-color: white;   
@@ -142,12 +184,13 @@ a {
     margin: 0;               
 }
 
-.heart-container{
+.heart-container {
     position: absolute;
     top: 74%;
     right: 6%;
-
+    cursor: pointer;
 }
+
 
 .heart-empty {
     position: absolute;
@@ -155,6 +198,7 @@ a {
     left: -26px;
     font-size: 25px;
     color: black;
+    transition: opacity 0.3s ease-in-out;
 }
 
 
@@ -163,11 +207,22 @@ a {
     top: 13px;
     left: -26px;
     font-size: 25px;
-    color: #9356DC; 
+    color: #9356DC;
     opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
+
+.heart-container:hover .heart-empty {
+    opacity: 0;
+}
 .heart-container:hover .heart-full {
     opacity: 1;
+}
 
+.heart-container:active .heart-empty {
+    opacity: 0;
+}
+.heart-container:active .heart-full {
+    opacity: 1;
 }

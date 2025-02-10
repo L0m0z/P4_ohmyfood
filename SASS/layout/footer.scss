@@ -1,7 +1,6 @@
 .footer {
     background-color: #353535;
     padding: 25px;
-    margin-top: 50px;
 }
 
 .footer h2 {
@@ -12,10 +11,34 @@
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1024px) {
+    .footer h2 {
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer article {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+    }
+}
+
 .footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .footer ul {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
 }
 
 .footer ul li {
@@ -23,7 +46,6 @@
     color: white;
     margin: 10px 0;
     display: flex;
-    justify-content: start;
     gap: 10px;
 }
 

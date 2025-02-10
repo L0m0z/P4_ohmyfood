@@ -1,9 +1,9 @@
 .form-container {
     width: 100%;
     margin-top: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
     z-index: 1;
-    background-color: #f1f1f1;
+    background-color: #EAEAEA;
 }
 
 .input-container {
@@ -24,7 +24,7 @@ form input[type="text"] {
     font-size: 20px;
     text-align: center;
     color: #353535;
-    background-color: #f1f1f1;
+    background-color: #EAEAEA;
 }
 
 form input::placeholder {
@@ -69,5 +69,5 @@ form input::placeholder {
 
 .btn-explore button:hover {
     box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3); 
-    
+    filter: brightness(1.2);
 }
