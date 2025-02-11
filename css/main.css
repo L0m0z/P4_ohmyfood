@@ -28,11 +28,6 @@ body {
   font-family: "Roboto";
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-}
-
 img {
   max-width: 100%;
 }
@@ -51,10 +46,20 @@ button:hover {
   box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.25);
 }
 
-header {
+.header {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
   width: 100%;
-  margin-top: 30px;
+  padding: 14px 15px;
+}
+
+.header a {
+  position: absolute;
+  left: 15px;
+  font-size: 24px;
+  color: #353535;
 }
 
 .header img {
@@ -434,10 +439,6 @@ a {
   opacity: 1;
 }
 
-.header {
-  padding-bottom: 15px;
-}
-
 .entree-and-plats-and-desserts h1 {
   font-family: "Shrikhand";
   padding-left: 22px;
@@ -469,6 +470,11 @@ a {
   padding-bottom: 25px;
 }
 
+@media screen and (min-width: 1024px) {
+  .entree-and-plats-and-desserts {
+    padding: 50px 10%;
+  }
+}
 .btn-explore-commander {
   display: flex;
   justify-content: center;

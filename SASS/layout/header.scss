@@ -1,7 +1,18 @@
-header {
-    align-items: center;
+
+.header {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
     width: 100%;
-    margin-top: 30px;
+    padding: 14px 15px;
+}
+
+.header a {
+    position: absolute;
+    left: 15px; 
+    font-size: 24px;
+    color: #353535; 
 }
 
 .header img {

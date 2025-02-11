@@ -1,7 +1,3 @@
-.header{
-    padding-bottom: 15px;
-}
-
 .entree-and-plats-and-desserts h1 {
     font-family: "Shrikhand";
     padding-left: 22px;
@@ -32,6 +28,13 @@
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+@media screen and (min-width: 1024px) {
+    .entree-and-plats-and-desserts {
+        padding: 50px 10%;
+    }
+}
+
 
 .btn-explore-commander {
     display: flex;
