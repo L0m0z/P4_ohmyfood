@@ -24,8 +24,8 @@ ul, ol {
 
 body {
   display: flex;
-  flex-direction: column;
   font-family: "Roboto";
+  max-width: 1440px;
 }
 
 img {
@@ -202,6 +202,8 @@ form input::placeholder {
   border-radius: 50%;
   animation: spin 1s linear infinite, hideLoader 0s ease 1s forwards;
   z-index: 1000;
+  opacity: 0.5;
+  animation: hideLoader 0s ease 1s forwards;
 }
 
 @keyframes spin {
@@ -214,18 +216,8 @@ form input::placeholder {
 }
 @keyframes hideLoader {
   to {
-    visibility: hidden;
+    visibility: 1;
     opacity: 0;
-  }
-}
-body {
-  opacity: 0.5;
-  animation: showPage 0s ease 1s forwards;
-}
-
-@keyframes showPage {
-  to {
-    opacity: 1;
   }
 }
 .card {
@@ -480,7 +472,7 @@ a {
   justify-content: center;
 }
 
-.section-title {
+.entree-and-plats-and-desserts.section-title {
   margin-bottom: 15px;
   font-weight: 300;
   text-decoration: underline;
