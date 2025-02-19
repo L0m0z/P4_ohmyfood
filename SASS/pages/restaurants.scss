@@ -1,12 +1,12 @@
 .entree-and-plats-and-desserts h1 {
     font-family: "Shrikhand";
-    padding-left: 22px;
+    padding-left: 27px;
     font-weight: 300;
 }
 
 .img-title {
     width: 100%;
-    height: 20%;
+    height: clamp(250px,50vh,500px);
     position: relative;
     z-index: 1;
 }
@@ -15,18 +15,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 32%;
+    
 }
+
 
 .entree-and-plats-and-desserts {
     background-color: #F6F6F6;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     position: relative;
-    margin-top: -20%;
+    margin-top: -50px;
     z-index: 2;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -39,10 +38,11 @@
 .btn-explore-commander {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 
-.entree-and-plats-and-desserts.section-title{
+.entree-and-plats-and-desserts .section-title{
     margin-bottom: 15px;
     font-weight: 300; 
     text-decoration: underline; 
@@ -59,7 +59,7 @@
 .entree-cards{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    
 }
 
 
@@ -71,7 +71,7 @@
 .plats-cards{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    
 }
 
 .desserts {
@@ -81,7 +81,7 @@
 .desserts-cards{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    
 }
 
 
@@ -98,6 +98,61 @@
     text-align: right;         
 }
 
+.title-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 10px;
+    position: relative;
+    padding-top: 30px;
+    width: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .title-group {
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+
+
+.entree-and-plats-and-desserts .heart-icon {
+    position: relative;
+    display: inline-block;
+    width: 25px; 
+    height: 25px; 
+}
+
+.entree-and-plats-and-desserts .heart-icon .heart-empty,
+.entree-and-plats-and-desserts .heart-icon .heart-full {
+    position: absolute;
+    top: 0;
+    left: -51px;
+    font-size: 25px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .entree-and-plats-and-desserts .heart-icon .heart-empty,
+    .entree-and-plats-and-desserts .heart-icon .heart-full {
+        top: 2px;
+        left: -11px;
+    }
+}
+
+.entree-and-plats-and-desserts .heart-icon .heart-full {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.entree-and-plats-and-desserts .heart-icon:hover .heart-full {
+    opacity: 1;
+}
+
+.entree-and-plats-and-desserts .heart-icon:hover .heart-empty {
+    opacity: 0;
+}
 
 
 
@@ -108,4 +163,9 @@
 
 
 
-
+@media screen and (min-width: 1024px) {
+    .section-entree-plats-desserts {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}

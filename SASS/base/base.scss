@@ -1,9 +1,12 @@
 body {
     display: flex;
-
-    font-family:'Roboto';
+    justify-content: center;
+    font-family: "Roboto";
     max-width: 1440px;
+    margin: auto;
 }
+
+
 
 
 img {
@@ -14,6 +17,8 @@ img {
     display: flex;
     width: 100%;
     flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .fa-solid {
