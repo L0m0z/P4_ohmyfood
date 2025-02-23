@@ -17,7 +17,7 @@ a {
     text-decoration: none;
 }
 .card-content {
-    padding: 25px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -27,7 +27,8 @@ a {
 .card-txt {
     display: flex;          
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
 }
 
 
@@ -35,8 +36,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 22px;        
-    font-weight: 500;       
+    font-size: 22px;              
     margin: 0; 
     color: #000;              
 }
@@ -46,4 +46,21 @@ a {
     font-size: 18px;          
     color: #777;               
     margin: 0;               
+}
+
+.restaurant-cards .card .card-new {
+    position: absolute; 
+    top: 13px;         
+    right: 12px;    
+}
+
+.card-new{
+    width: 80px;
+    height:29px;
+    background-color: rgb(153, 226, 208);
+    color: #008758;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
 }

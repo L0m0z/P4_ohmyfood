@@ -54,33 +54,23 @@
 
 .entree {
     padding: 40px 30px;
+   
 }
 
-.entree-cards{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-
-
-.plats {
+.plats{
     padding: 40px 30px;
-}
-
-.plats-cards{
-    display: flex;
-    flex-direction: column;
-    
+   
 }
 
 .desserts {
     padding: 40px 30px;
+   
 }
 
-.desserts-cards{
+.menu-cards{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     
 }
 
@@ -89,13 +79,16 @@
     display: flex;               
     justify-content: space-between;
     align-items: center;         
-    width: 100%;                 
+    width: 100%;    
+    position: relative;             
 }
 
 .card-price {
     margin-left: auto;                    
     font-weight: bold;         
-    text-align: right;         
+    text-align: right; 
+    position: absolute;
+    right: 0;        
 }
 
 .title-group {
@@ -156,16 +149,130 @@
 
 
 
-
-
-
-
-
-
-
 @media screen and (min-width: 1024px) {
     .section-entree-plats-desserts {
         margin-left: 15%;
         margin-right: 15%;
+    }
+}
+
+
+
+
+.card-check {
+    position: absolute;
+    right: 0; /* Place .card-check à l'extrême droite */
+    height: 80px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.menu-card .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu-card .card:hover .card-check {
+    opacity: 1; /* Devient visible */
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.card-check i{
+    color: white;
+    font-size: 20px;
+}
+
+.card-price {
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-card .card:hover .card-price {
+    transform: translateX(-70px);
+}
+
+
+
+.section-title,
+.menu-card {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+
+.entree-title .section-title {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 100ms;
+}
+
+.entree .menu-card:nth-child(1) {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 200ms;
+}
+.entree .menu-card:nth-child(2) {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 300ms;
+}
+.entree .menu-card:nth-child(3) {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 400ms;
+}
+
+.plats-title .section-title {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 500ms;
+}
+
+.plats .menu-card:nth-child(1) {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 600ms;
+}
+.plats .menu-card:nth-child(2) {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 700ms;
+}
+.plats .menu-card:nth-child(3) {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 800ms;
+}
+
+.desserts-title .section-title {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 900ms;
+}
+
+.desserts .menu-card:nth-child(1) {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 1000ms;
+}
+.desserts .menu-card:nth-child(2) {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 1100ms;
+}
+.desserts .menu-card:nth-child(3) {
+    animation: fadeInSlide 0.5s ease-out forwards;
+    animation-delay: 1200ms;
+}
+
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
