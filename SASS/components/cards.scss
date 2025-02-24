@@ -48,6 +48,40 @@ a {
     margin: 0;               
 }
 
+@media (max-width: 430px) {
+    .card-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card-subtitle {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 60%;
+        padding-right: 10px;
+    }
+
+ 
+    .card-price {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .card-price::after {
+        content: "...";
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
+
+
 .restaurant-cards .card .card-new {
     position: absolute; 
     top: 13px;         
