@@ -1,4 +1,2 @@
 Lien du repository GitHub :
-
-
-Lien de la version en ligne du site :
+https://github.com/L0m0z/P4_ohmyfood.git
